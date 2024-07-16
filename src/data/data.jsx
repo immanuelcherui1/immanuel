@@ -25,7 +25,7 @@ const projectsData = [
     },
     {
         name: "African Gourmet Cuisine Hub",
-        link: "https://pacific-earth-73082-63dfd2228252.herokuapp.com/",
+        link: "https://african-gourmet-cuisine-hub-f180079b7050.herokuapp.com/",
         image: img2,
         details: "African Gourmet Cuisine Hub, the premier destination for authentic African gourmet experiences."
     },
