@@ -20,7 +20,10 @@ const Projects = () => {
                         </div>
                     ))}
                 </div>
-            </div> {/* <-- This was missing */}
+                 <div className="md:mt-12 mt-4 flex justify-center items-center">
+                    <a className="btn" href="https://github.com/immanuelcherui1" target='_blank' rel="noopener noreferrer"> More Codes </a>
+                </div>
+            </div> 
             
             <div>
                 <h1 className="section-title">Graphics</h1>
@@ -41,7 +44,7 @@ const Projects = () => {
                 </div>
 
                 <div className="md:mt-12 mt-4 flex justify-center items-center">
-                    <a className="btn" href="https://github.com/immanuelcherui1" target='_blank' rel="noopener noreferrer">More Projects</a>
+                    <a className="btn" href="https://photos.app.goo.gl/GKhF4MHVbdr5u3ki7" target='_blank' rel="noopener noreferrer"> More Graphics </a>
                 </div>
             </div>
 
