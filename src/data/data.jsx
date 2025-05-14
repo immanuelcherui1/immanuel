@@ -1,5 +1,11 @@
 import img1 from "../assets/img1.png"
 import img2 from "../assets/img2.png"
+import Labour from "../assets/Labour.png"
+import Siloam from "../assets/Siloam.jpg"
+import eid from "../assets/eid.png"
+import kengenn from "../assets/kengenn.jpg"
+import thankyou from "../assets/thankyou.png"
+import Mbogo from "../assets/Mbogo.jpeg"
 
 const servicesData = [
     {
@@ -25,6 +31,13 @@ const projectsData = [
         type: "website"
     },
     {
+        name: "Independent Tea Producers Agency",
+        link: "https://itpak.co.ke/",
+        image: img1,
+        details: "ITPAK is the official platform for Kenya’s Independent Tea Producers, promoting innovation, advocacy, and value addition in the tea industry.",
+        type: "website"
+    },
+    {
         name: "African Gourmet Cuisine Hub",
         link: "https://african-gourmet-cuisine-hub-f180079b7050.herokuapp.com/",
         image: img2,
@@ -34,42 +47,42 @@ const projectsData = [
     {
         name: "Holiday Poster",
         link: "https://photos.app.goo.gl/XWTtQyYhSaREncDj8", 
-        image: "https://photos.app.goo.gl/XWTtQyYhSaREncDj8", 
+        image: Labour, 
         details: "Labour Day poster design created in Adobe Illustrator, showcasing diverse professions and celebrating workers for Silver Ark Printing.",
         type: "graphics"
     },
     {
         name: "Product Poster",
         link: "https://photos.app.goo.gl/6wJ79DmsmL6Vp8nk9", 
-        image: "https://photos.app.goo.gl/6wJ79DmsmL6Vp8nk9", 
+        image: Mbogo, 
         details: "Product lifestyle poster design for Kipchimchim Group’s Mogo Valley Tea — blending bold messaging and cozy visuals to promote a relaxing tea experience.",
         type: "graphics"
     },
     {
         name: "Happy Nurse Week",
         link: "https://photos.app.goo.gl/QjcDHoUwhDKRfbFD6", 
-        image: "https://photos.app.goo.gl/QjcDHoUwhDKRfbFD6", 
+        image: Siloam, 
         details: "Appreciation poster design for Siloam Hospital celebrating Nurses Week 2025 — highlighting compassion and dedication through clean, uplifting visuals.",
         type: "graphics"
     },
     {
         name: "Thank you card",
         link: "https://photos.app.goo.gl/yBnbNj92j7GREGZB6", 
-        image: "https://photos.app.goo.gl/yBnbNj92j7GREGZB6", 
+        image: thankyou, 
         details: "Elegant thank you card design for Wedon Events, crafted to express gratitude with a stylish, event-branded touch suitable for weddings and corporate functions.",
         type: "graphics"
     },
     {
         name: "Eid",
         link: "https://photos.app.goo.gl/u12db6Xt5dfCapMb9", 
-        image: "https://photos.app.goo.gl/u12db6Xt5dfCapMb9", 
+        image: eid, 
         details: "Eid al-Fitr promotional poster for Kipchimatt Supermarket, combining festive Islamic elements with vibrant offers to celebrate the season of giving and community.",
         type: "graphics"
     },
     {
         name: "Sports",
         link: "https://photos.app.goo.gl/JcVdFRQEKZ2WiakJ8", 
-        image: "https://photos.app.goo.gl/JcVdFRQEKZ2WiakJ8", 
+        image: kengenn, 
         details: "Elegant poster design for the KenGen Golf Tournament at Kericho Golf Club, capturing the spirit of sportsmanship, prestige, and green energy in a refined visual layout.",
         type: "graphics"
     }
