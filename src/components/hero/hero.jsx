@@ -33,7 +33,7 @@ const Hero = () => {
                     </p>
                     <div>
                         <button className="btn  ">
-                          <a href="https://docs.google.com/document/d/1uxhVmRS5g38cvge-AUgSgoOHZnt34gKiIE5025k67lE/edit?usp=sharing" 
+                          <a href="https://drive.google.com/file/d/1XudchEypCFjrCoVdS0rEGN_F7j3EgLFd/view?usp=sharing" 
                             target="_blank" rel="noopener noreferrer">
                                 View Resume
                             </a>  
