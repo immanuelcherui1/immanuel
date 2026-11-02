@@ -1,0 +1,9 @@
+const jobs = [
+ ['2024 – Present', 'Software Developer & Digital Designer', 'Freelance · Remote, part-time', 'Developing responsive websites, landing pages and REST APIs with React and Flask. Creating brand visuals and maintaining projects on GitHub, Vercel and Netlify.'],
+ ['Nov 2023 – Oct 2026', 'Graphic Designer, ICT Support & Office Administrator', 'Silver Ark Investments · Kericho', 'Provided first-line ICT support, designed campaign graphics and maintained reports, inventory records and digital documentation.'],
+ ['Jan 2022 – Oct 2023', 'Graphic Designer & Production Technician', 'Silver Ark Designs · Kericho', 'Designed marketing materials and production-ready artwork. Worked on commercial printing, signage and branding, including equipment troubleshooting and quality checks.'],
+ ['2021 – 2022', 'Data Annotation Specialist', 'Samasource Kenya', 'Processed and cross-checked data to support dataset accuracy and reliability.']
+];
+export default function Experience() {
+ return <section id="experience" className="experience-section"><p className="eyebrow">MY JOURNEY</p><h2>Experience & education.</h2><div className="journey-grid"><div>{jobs.map(([date, role, company, text]) => <article className="timeline-item" key={role}><p className="date">{date}</p><h3>{role}</h3><p className="company">{company}</p><p>{text}</p></article>)}</div><aside className="education" aria-label="Education and training"><h3>Currently learning</h3><p className="date">JAN 2026 – PRESENT</p><h4>Level 6 Computer Science</h4><p>Kericho Township Technical and Vocational College</p><span className="status-tag">In progress</span><div><p className="date">2024</p><h4>Software Engineering & Data Analytics</h4><p>Professional Certificate · Moringa School</p></div><div><p className="date">2026</p><h4>Graphics Design Grade 1</h4><p>NITA · Recognition of Prior Learning</p></div></aside></div></section>
+}

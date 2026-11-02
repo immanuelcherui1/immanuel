@@ -1,3 +1,4 @@
+import itpak from "../assets/itpak.png"
 import img1 from "../assets/img1.png"
 import img2 from "../assets/img2.png"
 import Labour from "../assets/Labour.png"
@@ -33,7 +34,7 @@ const projectsData = [
     {
         name: "Independent Tea Producers Agency",
         link: "https://itpak.co.ke/",
-        image: img1,
+        image: itpak,
         details: "ITPAK is the official platform for Kenya’s Independent Tea Producers, promoting innovation, advocacy, and value addition in the tea industry.",
         type: "website"
     },

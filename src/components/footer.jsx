@@ -20,6 +20,7 @@ const Footer = () => {
             </div>
 
             <button
+                aria-label="Back to top"
                 onClick={scrollToTop}
                 className="fixed bottom-10 right-8 md:p-4 p-3 bg-cyan-500 text-white rounded-full shadow-md focus:outline-none"
                 >

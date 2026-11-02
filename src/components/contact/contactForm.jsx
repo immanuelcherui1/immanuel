@@ -1,54 +1,17 @@
-import { FaPaperPlane } from "react-icons/fa";
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-
-const ContactForm = () => {
-     
-    const form = useRef();
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm('service_40g8lrs', 'template_kj62dw8', form.current, 'KH9Dm1YBWVcG7U7I5')
-        .then((result) => {
-            console.log(result.text);
-            console.log('Message sent successfully!')
-        }, (error) => {
-            console.log(error.text);
-            console.log('There was an error, please try again!')
-        });
-        
-        e.target.reset()
-        alert('Email sent successfully')
-    };
-
-    return ( 
-        <>
-            <div className="md:p-5 p-4 bg-slate-900 rounded-xl shadow-xl shadow-slate-800">
-                <form ref={form} onSubmit={sendEmail} >
-                    <div className="label">
-                        <input className="input " type="text" name="user_name" placeholder="Enter name..." required />
-                    </div>
-                    <div className="label">
-                        <input className="input " type="email" name="user_email" placeholder="Enter email..." required />
-                    </div>
-                    <div className="label">
-                        <input className="input " type="text" name="subject" placeholder="Enter subject..." required />
-                    </div>
-                    <div className="label">
-                        <textarea className="input" name="message" placeholder="Enter Message..." cols="30" rows="4"></textarea>
-                    </div>
-                    <button className="mt-4 btn flex items-center justify-center">
-                        Submit
-                        <span className="ml-2">
-                            <FaPaperPlane />
-                        </span>
-                    </button>
-                </form>
-            </div>
-        
-        </>
-     );
+export default function ContactForm() {
+ const form = useRef(null);
+ const [status, setStatus] = useState('idle');
+ async function sendEmail(event) {
+  event.preventDefault();
+  if (status === 'sending') return;
+  setStatus('sending');
+  try {
+   await emailjs.sendForm('service_40g8lrs', 'template_kj62dw8', form.current, 'KH9Dm1YBWVcG7U7I5');
+   form.current.reset();
+   setStatus('success');
+  } catch { setStatus('error'); }
+ }
+ return <form ref={form} onSubmit={sendEmail} className="contact-form" aria-label="Contact Immanuel"><label>Your name<input className="input" type="text" name="user_name" autoComplete="name" required maxLength={120}/></label><label>Email address<input className="input" type="email" name="user_email" autoComplete="email" required maxLength={254}/></label><label>Subject<input className="input" name="subject" required maxLength={180}/></label><label>Your message<textarea className="input" name="message" rows={5} required maxLength={5000}/></label><button className="btn" disabled={status === 'sending'} type="submit">{status === 'sending' ? 'Sending…' : 'Send message ↗'}</button><p role="status" aria-live="polite">{status === 'success' ? 'Thanks! Your message has been sent.' : status === 'error' ? 'Your message could not be sent. Please try again or email immanuelcherui1@gmail.com directly.' : ''}</p></form>
 }
- 
-export default ContactForm;
