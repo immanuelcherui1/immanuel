@@ -1,28 +1,3 @@
-import { FaGithub, FaGoogle, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import contactImg from "../../assets/contact.svg"
-
-const ContactInfo = () => {
-    
-    return ( 
-        <div>
-            <div className="">
-                <div>
-                    <img src={contactImg} alt="" />
-                </div>
-            </div>
-            <p className="">
-                Phone: +254700347776 <br />
-                Email: immanuelcherui1@gmail.com <br />
-            </p>
-            <p className="mt-2 font-medium text-slate-400">FIND WITH ME</p>
-            <div>
-                <button className="icon-btn"><a href="https://github.com/immanuelcherui1" target="_blank" rel="noopener noreferrer"><FaGithub /></a></button>
-                <button className="icon-btn"><a href="https://www.linkedin.com/in/immanuel-cheruiyot-datusjnr001/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a> </button>
-                <button className="icon-btn"><FaGoogle /></button>
-                <button className="icon-btn"><a href="https://twitter.com/IMMANUELCHERUI1" target="_blank" rel="noopener noreferrer"><FaTwitter /></a></button>
-            </div>
-        </div>
-     );
+export default function ContactInfo() {
+ return <div className="contact-intro"><p className="eyebrow">LET’S CONNECT</p><h2>Have an idea?<br/><span>Let’s make it happen.</span></h2><p>I’m open to internship opportunities, freelance projects and creative collaborations. Tell me what you’re working on.</p><div className="contact-links"><a href="mailto:immanuelcherui1@gmail.com">immanuelcherui1@gmail.com</a><a href="tel:+254700347776">+254 700 347 776</a><a href="https://www.linkedin.com/in/immanuel-cheruiyot/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a><a href="https://github.com/immanuelcherui1" target="_blank" rel="noopener noreferrer">Explore my GitHub ↗</a></div></div>
 }
- 
-export default ContactInfo;

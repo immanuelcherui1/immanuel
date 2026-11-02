@@ -1,30 +1,3 @@
-import aboutImg from "../../assets/about.svg"
-const About = () => {
-    return ( 
-        <section id="about">
-            <div className="grid sm:grid-cols-2">
-                <div>
-                    <img src={aboutImg} alt="About Image" />
-                </div>
-
-                <div>
-                    <h1 className="section-title">Who I Am</h1>
-                    <div className="md:space-y-8 space-y-4">
-                        <p>I am a Full Stack Developer based in Kenya, with a passion for creating beautiful and intuitive user experiences.</p>
-                        <p>I have a strong background in both front-end and back-end development. I am a self-motivated, hard-working and dedicated individual. Also team player, and always looking to learn new skills and techniques.</p>
-                        <p>
-                            <span> I do integration of third party services such as Firebase/ Supabase / Digital Ocean / Mailchimp and also have experience in building RESTful APIs.</span>
-                            <span> I also do integration of payment services such as M-Pesa, Paypal and Stripe</span>
-                        </p>
-                    </div>
-                    <button className="md:mt-8 mt-4">
-                        <a className="btn" href="#contact">Hire Me</a>
-                    </button>
-                </div>
-            </div>
-            <hr className="section-border"/>  
-        </section>
-     );
+export default function About() {
+ return <section id="about" className="about-section" aria-labelledby="about-title"><div><p className="eyebrow">A LITTLE ABOUT ME</p><h2 id="about-title">A practical mindset.<br/>A creative approach.</h2></div><div><p>I work at the intersection of technology and design. My experience spans web development, commercial branding and hands-on ICT support — helping businesses look better online and keep their digital tools working.</p><p>I’m currently studying Level 6 Computer Science at Kericho Township Technical and Vocational College, building on my software engineering training at Moringa School. I’m keen to learn from experienced teams and contribute to products that solve everyday problems.</p><a className="text-link" href="#contact">Let’s work together ↗</a></div></section>
 }
- 
-export default About;
