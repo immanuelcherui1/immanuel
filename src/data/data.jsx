@@ -1,12 +1,12 @@
-import itpak from "../assets/itpak.png"
-import img1 from "../assets/img1.png"
-import img2 from "../assets/img2.png"
-import Labour from "../assets/Labour.png"
-import Siloam from "../assets/Siloam.jpg"
-import eid from "../assets/eid.png"
-import kengenn from "../assets/kengenn.jpg"
-import thankyou from "../assets/thankyou.png"
-import Mbogo from "../assets/Mbogo.jpeg"
+import itpak from "../assets/itpak.webp"
+import img1 from "../assets/img1.webp"
+import img2 from "../assets/img2.webp"
+import Labour from "../assets/Labour.webp"
+import Siloam from "../assets/Siloam.webp"
+import eid from "../assets/eid.webp"
+import kengenn from "../assets/kengenn.webp"
+import thankyou from "../assets/thankyou.webp"
+import Mbogo from "../assets/Mbogo.webp"
 
 const servicesData = [
     {

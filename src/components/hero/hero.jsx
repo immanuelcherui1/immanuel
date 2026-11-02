@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedinIn, FaEnvelope, FaArrowRight } from "react-icons/fa";
-import hero from "../../assets/hero.png";
+import hero from "../../assets/hero.webp";
 
 export default function Hero() {
  return <section className="hero-section" id="home" aria-labelledby="hero-title">
