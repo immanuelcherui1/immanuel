@@ -14,7 +14,7 @@ const Footer = () => {
         <footer className="bg-slate-700 text-white md:py-3 py-3 px-3 md:text-base text-sm">
             <div className="flex items-center justify-center">
                 <p>
-                    Â© Immanuel Cheruiyot | All rights reserved |
+                    © Immanuel Cheruiyot | All rights reserved |
                     <span className="ml-1 text-cyan-400">{year}</span>
                 </p>
             </div>

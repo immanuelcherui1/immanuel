@@ -35,7 +35,7 @@ const projectsData = [
         name: "Independent Tea Producers Agency",
         link: "https://itpak.co.ke/",
         image: itpak,
-        details: "ITPAK is the official platform for Kenyaâ€™s Independent Tea Producers, promoting innovation, advocacy, and value addition in the tea industry.",
+        details: "ITPAK is the official platform for Kenya’s Independent Tea Producers, promoting innovation, advocacy, and value addition in the tea industry.",
         type: "website"
     },
     {
@@ -56,14 +56,14 @@ const projectsData = [
         name: "Product Poster",
         link: "https://photos.app.goo.gl/6wJ79DmsmL6Vp8nk9", 
         image: Mbogo, 
-        details: "Product lifestyle poster design for Kipchimchim Groupâ€™s Mogo Valley Tea â€” blending bold messaging and cozy visuals to promote a relaxing tea experience.",
+        details: "Product lifestyle poster design for Kipchimchim Group’s Mogo Valley Tea — blending bold messaging and cozy visuals to promote a relaxing tea experience.",
         type: "graphics"
     },
     {
         name: "Happy Nurse Week",
         link: "https://photos.app.goo.gl/QjcDHoUwhDKRfbFD6", 
         image: Siloam, 
-        details: "Appreciation poster design for Siloam Hospital celebrating Nurses Week 2025 â€” highlighting compassion and dedication through clean, uplifting visuals.",
+        details: "Appreciation poster design for Siloam Hospital celebrating Nurses Week 2025 — highlighting compassion and dedication through clean, uplifting visuals.",
         type: "graphics"
     },
     {
