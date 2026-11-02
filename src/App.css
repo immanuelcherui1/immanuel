@@ -12,3 +12,6 @@ h2{font-size:clamp(28px,3.2vw,40px);line-height:1.2;font-weight:600;letter-spaci
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
 .service-card,.skill-group{padding:28px;background:#17232b;border:1px solid var(--line);border-radius:7px}.service-card>span{font-size:12px;color:var(--accent);display:block;margin-bottom:25px}.service-card h3,.skill-group h3{font-size:21px;font-weight:600;margin-bottom:12px}.service-card p{color:var(--muted);font-size:14px;line-height:1.85}.skill-group ul{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.skill-group li{font-size:12px;color:#c9d7dd;border:1px solid #35444d;border-radius:4px;padding:6px 9px}
+
+/* Keep the supplied square portrait fully visible at every breakpoint. */
+.portrait.portrait-photo{padding-top:0;border-radius:16px}.portrait.portrait-photo img{height:auto;aspect-ratio:1;object-fit:contain;object-position:center;background:#fff}

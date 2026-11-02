@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedinIn, FaEnvelope, FaArrowRight } from "react-icons/fa";
-import hero from "../../assets/hero.webp";
+import hero from "../../assets/passport-photo.webp";
 
 export default function Hero() {
  return <section className="hero-section" id="home" aria-labelledby="hero-title">
@@ -10,6 +10,6 @@ export default function Hero() {
    <div className="hero-actions"><a className="btn" href="#projects">Explore my work <FaArrowRight aria-hidden="true"/></a><a className="outline-btn" href="/immanuel-cheruiyot-resume.pdf" target="_blank" rel="noopener noreferrer">View resume ↗</a></div>
    <div className="social-links"><a href="https://github.com/immanuelcherui1" target="_blank" rel="noopener noreferrer"><FaGithub aria-hidden="true"/> GitHub</a><a href="https://www.linkedin.com/in/immanuel-cheruiyot/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn aria-hidden="true"/> LinkedIn</a><a href="mailto:immanuelcherui1@gmail.com"><FaEnvelope aria-hidden="true"/> Email</a></div>
   </div>
-  <div className="portrait"><img src={hero} alt="Immanuel Cheruiyot" fetchPriority="high"/><div className="portrait-caption"><span>CODE MEETS CREATIVITY</span><p>Curious by nature.<br/>Learning by building.</p></div></div>
+  <div className="portrait portrait-photo"><img src={hero} alt="Immanuel Cheruiyot" fetchPriority="high"/><div className="portrait-caption"><span>CODE MEETS CREATIVITY</span><p>Curious by nature.<br/>Learning by building.</p></div></div>
  </section>
 }
